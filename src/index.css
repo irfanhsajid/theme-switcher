@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 :root {
-  --themeBackground: 38 92% 50%;
+  --themeBackground: 0 0% 100%;
   --primary: 120 100% 25%;
-  --themeForeground: 48 96% 89%;
+  --themeForeground:  0 0% 0%;
 }
 
 .dark {
@@ -26,9 +26,9 @@
 }
 
 h1 {
-  @apply border-b py-1 border-white;
+  @apply border-b py-1 border-white w-[90%] mx-auto;
 }
 
 .sectionContainer{
-  @apply w-full h-screen bg-themeBackground text-themeForeground;
+  @apply w-full p-2 h-screen bg-themeBackground text-themeForeground;
 }

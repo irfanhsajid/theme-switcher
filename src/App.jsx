@@ -1,18 +1,18 @@
+import { Fragment } from "react";
 
-const Home = () => {
+import AllRoutes from "./routes";
+import Navbar from "./shared/navbar";
+
+const App = () => {
 
   return (
 
-      <div className="sectionContainer">
-    
-      <h1 className="">Heading</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, eum incidunt at vel expedita magni, tempore a debitis et, molestias labore quasi! Itaque, doloremque facere! Molestiae voluptatibus, animi, suscipit blanditiis dignissimos, veniam provident aliquid culpa maiores quisquam dolore cum! Asperiores!
-
-      </p>
-    </div>
+      <Fragment>
+        <Navbar/>
+           <AllRoutes/>
+      </Fragment>
 
   )
 }
 
-export default Home;
+export default App;
