@@ -29,7 +29,7 @@ export function ThemeProvider({
                 .matches
                 ? "dark"
                 : window.matchMedia("(prefers-color-scheme: light)")
-                    .matches ? "light" : window.matchMedia("(prefers-color-scheme: blue)")
+                    .matches ? "light" : window.matchMedia("(prefers-color-scheme: light)")
                         .matches ? "blue" : "system"
 
             root.classList.add(systemTheme)

@@ -3,21 +3,21 @@
 @tailwind utilities;
 
 :root {
-  --warning: 38 92% 50%;
+  --themeBackground: 38 92% 50%;
   --primary: 120 100% 25%;
-  --warning-foreground: 48 96% 89%;
+  --themeForeground: 48 96% 89%;
 }
 
 .dark {
-  --warning: 48 96% 89%;
-  --primary: 220 100% 25%;
-  --warning-foreground: 38 92% 50%;
+  --themeBackground: 0 0% 0%;
+  --primary: 0 0% 100%;
+  --themeForeground:  0 0% 100%;
 }
 
 .blue {
-  --warning: 236 98% 41%;
+  --themeBackground: 236 98% 41%;
   --primary: 205 100% 25%;
-  --warning-foreground: 179 100% 90%;
+  --themeForeground: 179 100% 90%;
 }
 
 
@@ -26,5 +26,9 @@
 }
 
 h1 {
-  @apply border border-white;
+  @apply border-b py-1 border-white;
+}
+
+.sectionContainer{
+  @apply w-full h-screen bg-themeBackground text-themeForeground;
 }

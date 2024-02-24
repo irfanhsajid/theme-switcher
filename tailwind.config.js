@@ -8,9 +8,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        warning: "hsl(var(--warning))",
+        themeBackground: "hsl(var(--themeBackground))",
         primary: "hsl(var(--primary))",
-        "warning-foreground": "hsl(var(--warning-foreground))",
+        themeForeground: "hsl(var(--themeForeground))",
       }
     },
 
