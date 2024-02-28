@@ -15,20 +15,22 @@
 }
 
 .blue {
-  --themeBackground: 236 98% 41%;
+  --themeBackground: 210 97% 27%;
   --primary: 205 100% 25%;
-  --themeForeground: 179 100% 90%;
+  --themeForeground:  0 0% 100%;
 }
-
 
 * {
   @apply m-0 p-0 box-border text-[14px] md:text-[16px] leading-normal;
 }
 
 h1 {
-  @apply border-b py-1 border-white w-[90%] mx-auto;
+  @apply border-b py-1 border-white text-center w-[90%] mx-auto;
 }
 
 .sectionContainer{
   @apply w-full p-2 h-screen bg-themeBackground text-themeForeground;
+}
+.actionBtn{
+  @apply bg-themeForeground text-themeBackground font-medium px-6 py-2 rounded-[5px] hover:bg-themeForeground/80
 }
