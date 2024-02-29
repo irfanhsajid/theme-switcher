@@ -34,3 +34,15 @@ h1 {
 .actionBtn{
   @apply bg-themeForeground text-themeBackground font-medium px-6 py-2 rounded-[5px] hover:bg-themeForeground/80
 }
+
+/* Custom Styles for AddNewBlog.jsx Page */
+.iconDiv{
+  @apply size-10 rounded-[8px] flex justify-center items-center bg-[#F1F5FF] border hover:border-[#8CACFF] cursor-pointer
+}
+.iconInputArea{
+  @apply w-[10%] rounded-[5px] flex justify-between items-center bg-[#F1F5FF] border-2 border-inherit hover:border-[#8CACFF]  cursor-pointer
+}
+
+.modalDashedArea{
+  @apply bg-[#F4F4FF] w-full gap-4 border border-dashed flex justify-center text-center flex-col mx-auto rounded-[5px] my-5 items-center border-[#7075FF] py-4
+}

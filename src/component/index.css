@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Roboto:wght@300;400;500;700&display=swap');
+@import 'react-toastify/dist/ReactToastify.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+  [type='text']:focus,
+  [type='email']:focus,
+  [type='url']:focus,
+  [type='password']:focus,
+  [type='number']:focus,
+  [type='date']:focus,
+  [type='datetime-local']:focus,
+  [type='month']:focus,
+  [type='search']:focus,
+  [type='tel']:focus,
+  [type='time']:focus,
+  [type='week']:focus,
+  [multiple]:focus,
+  textarea:focus,
+  select:focus {
+    border-color: var(--green);
+    --tw-ring-color: transparent;
+  }
+
+  [type='text'][data-error]:focus,
+  [type='email'][data-error]:focus,
+  [type='url'][data-error]:focus,
+  [type='password'][data-error]:focus,
+  [type='number'][data-error]:focus,
+  [type='date'][data-error]:focus,
+  [type='datetime-local'][data-error]:focus,
+  [type='month'][data-error]:focus,
+  [type='search'][data-error]:focus,
+  [type='tel'][data-error]:focus,
+  [type='time'][data-error]:focus,
+  [type='week'][data-error]:focus,
+  [multiple][data-error]:focus,
+  textarea[data-error]:focus,
+  select[data-error]:focus {
+    --tw-ring-color: var(--red);
+    border-color: var(--red);
+  }
+
+  [type='checkbox'] {
+    border-radius: 2px;
+  }
+
+  [type='checkbox'],
+  [type='radio'] {
+    color: var(--green);
+    border-color: var(--green);
+  }
+
+  [type='checkbox']:focus,
+  [type='radio']:focus {
+    --tw-ring-color: none;
+  }
+
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--main);
+    color: var(--body-text);
+  }
+
+  input:focus-visible,
+  textarea:focus-visible,
+  select:focus-visible {
+    outline: none;
+  }
+
+  textarea[data-error],
+  input[data-error],
+  select[data-error] {
+    border: 1px solid var(--red);
+  }
+
+  textarea::placeholder,
+  select::placeholder,
+  input::placeholder {
+    color: var(--light-text);
+    opacity: 0.5;
+  }
+
+  textarea {
+    border: 1px solid var(--stroke);
+    padding: 8px;
+    color: var(--body-text);
+    width: 100%;
+    height: 100%;
+    min-height: 38px;
+  }
+
+  select,
+  input {
+    border: 1px solid var(--stroke);
+    padding: 8px;
+    color: var(--body-text);
+    width: 100%;
+    height: 38px;
+    border-radius: 3px;
+  }
+
+  label {
+    text-transform: capitalize;
+  }
+
+  :disabled {
+    cursor: default;
+    background: aliceblue;
+  }
+
+  ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(171, 171, 171, 0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+    background-color: #F5F5F5;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: var(--green);
+  }
+}
+
+/* Custom Styles for AddNewBlog.jsx Page */
+.iconDiv{
+  @apply size-10 rounded-[8px] flex justify-center items-center bg-[#F1F5FF] border hover:border-[#8CACFF] cursor-pointer
+}
+.iconInputArea{
+  @apply w-[10%] rounded-[5px] flex justify-between items-center bg-[#F1F5FF] border-2 border-inherit hover:border-[#8CACFF]  cursor-pointer
+}
+
+.modalDashedArea{
+  @apply bg-[#F4F4FF] w-full gap-4 border border-dashed flex justify-center text-center flex-col mx-auto rounded-[5px] my-5 items-center border-[#7075FF] py-4
+}

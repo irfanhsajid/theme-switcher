@@ -1,0 +1,185 @@
+/* Login starts */
+.login-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-area,
+.password-area {
+  background-image: url("/authBg.png");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  padding: 24px;
+}
+
+.login-wrapper {
+  max-width: 1200px;
+  justify-content: center;
+  display: flex;
+  gap: 48px;
+  align-items: center;
+}
+
+@media only screen and (max-width: 780px) {
+  .login-wrapper {
+    flex-direction: column;
+  }
+}
+
+.login-wrapper .tf-info,
+.sign-form {
+  width: 40%;
+
+}
+
+.login-wrapper .tf-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-wrapper .tf-info .logo-brand svg {
+  width: 202.312px;
+  height: 97.11px;
+  flex-shrink: 0;
+}
+
+.login-wrapper .tf-info p {
+  margin-top: 2px;
+  color: var(--blue);
+  font-family: 'Inter', sans-serif;
+  font-size: 17.854px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.login-wrapper .tf-info h2 {
+  color: var(--blue);
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.login-wrapper .sign-form.input-area {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  align-self: stretch;
+  padding: 24px;
+}
+
+.login-wrapper .sign-form.input-area .input-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  align-self: stretch;
+  width: 100%;
+}
+
+.input-area .input-group label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #8B8987;
+  font-weight: 400;
+  line-height: 22px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  padding: 8px;
+  justify-content: flex-start;
+}
+
+.input-area .input-group input {
+  width: 100%;
+  height: auto;
+  padding: 8px;
+  border: 1px solid #E2E8F0;
+}
+
+.login-btn,
+.password-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  margin: 0 auto;
+  border: 2px solid var(--blue);
+  background-color: var(--blue) !important;
+  text-transform: uppercase;
+  color: #FFF;
+  /* padding: 16px 10px; */
+  height: 36px;
+  transition: 0.5s;
+  margin-top: 28px;
+  border-radius: 4px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.password-btn {
+  letter-spacing: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  margin: 24px 0;
+}
+
+.password-btn svg {
+  width: 20px;
+  height: 20px;
+  margin-bottom: 2px;
+}
+
+.login-btn:hover,
+.password-btn:hover {
+  border: 2px solid var(--blue);
+  background-color: transparent !important;
+  color: var(--blue);
+}
+
+.login-btn:hover span,
+.password-btn:hover span {
+  color: var(--blue) !important;
+}
+
+.forget-text {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.forget-text a {
+  color: var(--blue);
+}
+
+.dark-mode .forget-text a {
+  color: #f1f1f1 !important;
+}
+
+.password-form ul li {
+  color: #8B8987;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  /* 157.143% */
+}
