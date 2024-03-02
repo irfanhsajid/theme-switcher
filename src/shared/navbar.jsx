@@ -43,7 +43,7 @@ const topNav = [
     },
     {
         id:4,
-        name: 'Contact',
+        name: 'TF Project',
         link: '/contact'
     },
    
